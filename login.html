@@ -1,59 +1,43 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
-
-
-
+      <meta charset="utf-8">
+	<title>SpotWays</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/et-line-font.css">
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <link href="css/flexslider.css" rel="stylesheet" >
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-
-
-
 <style>
-
-  /**
- * 01/28/2016
- * This pen is years old, and watching at the code after all
- * those years made me fall from my chair, so I:
- * - changed all IDs to classes
- * - converted all units to pixels and em units
- * - changed all global elements to classes or children of
- *   .login
- * - cleaned the syntax to be more consistent
- * - added a lot of spaces that I so hard tried to avoid
- *   a few years ago
- *   (because it's cool to not use them)
- * - and probably something else that I can't remember anymore
- *
- * I sticked to the same philosophy, meaning:
- * - the design is almost the same
- * - only pure HTML and CSS
- * - no frameworks, preprocessors or resets
- */
-
-/* 'Open Sans' font from Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-
 body
-    
     {
   background: #ffffff;
   font-family: 'Open Sans', sans-serif;
 }
-
 .login {
   width: 400px;
   margin: 16px auto;
   font-size: 16px;
 }
-
-/* Reset top and bottom margins from certain elements */
 .login-header,
 .login p {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-/* The triangle form is achieved by a CSS hack */
 .login-triangle {
   width: 0;
   margin-right: auto;
@@ -61,7 +45,6 @@ body
   border: 12px solid transparent;
   border-bottom-color: #fdc82e;
 }
-
 .login-header {
   background: #fdc82e;
   padding: 20px;
@@ -71,17 +54,13 @@ body
   text-transform: uppercase;
   color: #fff;
 }
-
 .login-container {
   background: #ebebeb;
   padding: 12px;
 }
-
-/* Every row inside .login-container is defined with p tags */
 .login p {
   padding: 12px;
 }
-
 .login input {
   box-sizing: border-box;
   display: block;
@@ -93,58 +72,64 @@ body
   font-family: inherit;
   font-size: 0.95em;
 }
-
 .login input[type="email"],
 .login input[type="password"] {
   background: #fff;
   border-color: #bbb;
   color: #555;
 }
-
-/* Text fields' focus effect */
 .login input[type="email"]:focus,
 .login input[type="password"]:focus {
   border-color: #888;
 }
-
 .login input[type="submit"] {
   background: #fdc82e;
   border-color: transparent;
   color: 	#000000;
   cursor: pointer;
 }
-
 .login input[type="submit"]:hover {
   background: #ffff00;
 }
-
-/* Buttons' focus effect */
 .login input[type="submit"]:focus {
   border-color: #fdc82e;
 }
-
-
-
 </style>
-
-
-<body>
-    <center> <h1 style=" monospace;">SPOTWAYS</h1></center>
-    
+<body style="background-image: url(../assignment/images/back.jpg)">
+    <section class="navbar navbar-fixed-top custom-navbar" role="navigation" style="background-color: #3B3B3B">
+	<div class="container-fluid">
+		<div class="navbar-header">
+            <a href="index.html" class="navbar-brand"><img style="size:5px;" src="images/logo2.png" width="75%"></a>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+        </div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right" >
+				<li><a href="index.html" class="smoothScroll">Home</a></li>
+                <li><a href="#" class="smoothScroll">Industries</a></li>
+                <li><a href="solutions.html" class="smoothScroll">Solutions</a></li>
+				<li><a href="team.html" class="smoothScroll">About Us</a></li>
+				<li><a href="Contact.html" class="smoothScroll">Contact</a></li>
+				<li><a href="login.html" class="smoothScroll">Login</a></li>                                                                                 
+			</ul>
+		</div>
+	</div>
+    </section>
+    <center> <h1 style=" monospace;">SPOTWAYS</h1></center>    
     <br> <br><br> <br><br><br>
      <div class="login">
   <div class="login-triangle"></div>
-  
   <h2 class="login-header">Log in</h2>
-
   <form class="login-container">
     <p><input type="email" placeholder="Email"></p>
     <p><input type="password" placeholder="Password"></p>
+      <a href="#" style="float:right;"> <h5>Forgot Password?</h5></a>
     <p><input type="submit" value="Log in"></p>
+      
   </form>
+         
 </div>
-
-
-
-
 </body>
