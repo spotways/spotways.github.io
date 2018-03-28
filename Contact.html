@@ -122,31 +122,31 @@
                 <div class="col s12 m9 l10">
                     <div id="input" class="section scrollspy">
                           <div class="row">
-                            <form class="col s12">
+                            <form method="post" action="db.php" class="col s12">
                               <div class="row">
                                 <div class="input-field col s6">
-                                  <input placeholder="Name" id="name" type="text" class="validate">
+                                  <input placeholder="Name" id="name" type="text"  class="form-control validate[required]" name="name">
                                   <label for="name">Name</label>
                                 </div>
                                    <div class="input-field col s6 ">
-                                  <input placeholder="organization name" id="organization name" type="text" class="validate">
-                                  <label for="organization name">Organization name</label>
+                                  <input placeholder="organization name" id="bussiness" type="text" class="form-control validate[required]" name="bussiness">
+                                  <label for="bussiness">Organization name</label>
                                 </div>
                                  </div>
                                 <div class="row">
                                 <div class="input-field col s6">
-                                  <input placeholder="Address with City" id="Address with City" type="text" class="validate">
-                                  <label for="Address with City">Address with City</label>
+                                  <input placeholder="Address with City" id="inputAddress" type="text" class="form-control validate[required]" name="inputAddress">
+                                  <label for="inputAddress">Address with City</label>
                                 </div>
                                      <div class="input-field col s6">
-                                  <input placeholder="Industry Type " id="Industry Type" type="text" class="validate">
-                                  <label for="Industry Type">Industry Type</label>
+                                  <input placeholder="Industry Type " id="indtype" type="text" class="form-control validate[required]" name="indtype">
+                                  <label for="indtype">Industry Type</label>
                                 </div> 
                               </div>
                                 <div class="row">
 									<div class="form-group col-md-6">
 								<label for="country">Country</label> 
-								<select id="country" name="country" class="form-control validate[required]">
+								<select id="country" name="country" class="form-control validate[required]" name="country">
 									<option value="Afghanistan">Afghanistan</option>
 									<option value="Albania">Albania</option>
 									<option value="Algeria">Algeria</option>
@@ -415,19 +415,19 @@
                             </div>
                                 <div class="row">
                                 <div class="input-field col s12">
-                                  <input id="email" type="email" class="validate">
+                                  <input id="email" type="email" class="validate" name="email">
                                   <label for="email">Email</label>
                                 </div>
                             </div>
                                 <div class="row">
                                 <div class="input-field col s12">
-                                  <input id="phone" type="number" class="validate">
+                                  <input id="phone" type="number" class="validate" name="phone">
                                   <label for="phone">phone</label>
                                 </div>
                               </div>
                                 <div class="row">
                                 <div class="input-field col s12">
-                                  <input id="query" type="text" class="validate">
+                                  <input id="query" type="text" class="validate" name="query">
                                   <label for="query">Query</label>
                                 </div>
                                 </div>
